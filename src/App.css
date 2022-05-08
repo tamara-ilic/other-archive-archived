@@ -10,6 +10,7 @@ nav {
   display: flex;
   font-size: 0.5rem;
   justify-content: space-between;
+  padding: 0.5rem;
   text-transform: uppercase;
 }
 
@@ -28,7 +29,7 @@ nav a {
 }
 
 .nav--button_shop {
-  border: 1px solid red;
+  border: 5px solid blue;
   padding: 0.25em;
 }
 
@@ -72,7 +73,7 @@ nav a {
 }
 
 .shop {
-  background-color: lightgoldenrodyellow;
+  border: 5px solid blue;
 }
 
 /* @media only screen and (min-width: 600px) {
