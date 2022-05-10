@@ -4,7 +4,7 @@ import MiniMasonry from 'minimasonry'
 
 import Card from './Card'
 
-export default function Home(props) {
+export default function Home() {
     const [projects, { state, error }] = useAllPrismicDocumentsByType('project')
     console.log('projects:', projects)
     const grid = useRef();
