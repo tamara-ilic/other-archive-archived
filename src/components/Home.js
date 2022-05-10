@@ -12,12 +12,11 @@ export default function Home(props) {
     useEffect(() => {
         if (grid.current) {
         var masonry = new MiniMasonry({
-            baseWidth: 180,
+            baseWidth: 150,
             container: document.querySelector('.grid'),
             minify: false,
             surroundingGutter: false,
-            // gutterX: 48,
-            // gutterY: 24
+            gutter: 24
         })
         }
     })
