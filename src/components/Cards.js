@@ -25,13 +25,14 @@ export default function Cards() {
       console.log(event, id)
       if (id === this.id) {
         console.log('I should show detailed info for', id)
-        console.log(this.description)
+        console.log("description:", this.description)
       }
     }
 
     return (
       <div ref={grid} className='grid'>
         {projects && projects.map((item) => (
+          <>
           <Card
             key={item.id}
             id={item.id}
@@ -41,8 +42,8 @@ export default function Cards() {
             imgAlt={item.data.main_image.alt}
             title={item.data.title[0].text}
             date={item.data.date}
-            description={item.data.description}
           />
+          </>
         ))}
       </div>
     )

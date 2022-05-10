@@ -69,7 +69,11 @@ nav a {
 
 .card--description {
   color: red;
-  /* display: none; */
+  display: none;
+}
+
+.show--card {
+  display: unset;
 }
 
 .shop {

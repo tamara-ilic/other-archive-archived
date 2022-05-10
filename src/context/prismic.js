@@ -1,4 +1,5 @@
 import * as prismic from '@prismicio/client'
+import * as prismicH from '@prismicio/helpers'
 import env from 'react-dotenv'
 
 export const repositoryName = 'other-archive'
@@ -20,3 +21,12 @@ export const client = prismic.createClient(repositoryName, {
     // }
   ]
 })
+
+const init = async () => {
+  const document = await client.getFirst('project')
+  const documentAsHTML = prismicH.asHTML(document.data.description)
+  console.log(documentAsHTML)
+  // <p>This <em>should</em> log your formatted text.</p>
+}
+
+init()
